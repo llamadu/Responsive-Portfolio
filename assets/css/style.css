@@ -56,6 +56,7 @@ h3 {
   position: fixed;
   z-index: 99;
   width: 100%;
+  max-width: 100%;
   margin: 0 0 30px;
   overflow: auto;
   color: #ffffff;
@@ -65,7 +66,7 @@ h3 {
 
 #logo {
   float: left;
-  width: 250px;
+  width: 315px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -80,6 +81,7 @@ h3 {
 nav {
   float: right;
   margin-top: 25px;
+  margin-right: 7.5%;
 }
 
 nav a {
@@ -217,17 +219,35 @@ input[type="submit"] {
   border: 0 none;
 }
 @media screen and (max-width: 980px) {
-  body {
-    background-color: #333;
+  #main-container{
+    width:666px;
+    margin-left: 69px;
   }
 }
 @media screen and (max-width: 768px) {
-  body {
-    background-color: #333;
+  #main-container{
+    margin: 0 5%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 640px) {
-  body {
-    background-color: #333;
+  #logo {
+    clear:both;
+    width: 100%;
+  }
+  nav {
+    float: none;
+    text-align:center;
+    margin: 0;
+  }
+  #masthead {
+    position: static;
+  }
+  #main-container {
+    padding-top: 0px;
+  }
+  .auth-image {
+    float: none; 
+    width: 100%;
   }
 }
